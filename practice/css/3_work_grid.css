@@ -1,0 +1,117 @@
+body {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/****************** header ****************/
+
+.title h1 {
+	letter-spacing: -2px;		
+}
+
+.title h1 {
+	float: left;
+	text-indent: -9999px;	
+	letter-spacing: -2px;
+}
+
+.title h1 a{
+	background: url(../img/2_logo2.png) no-repeat;
+	width: 175px;	
+	float: left;	
+}
+
+header h1 span {
+	font-weight: normal;
+}
+
+.title .grid_5 { /* logo */
+	float: left; 
+}
+
+.title .grid_19 { /* nav */
+	float: right;	
+	margin-top: 3px;		
+}
+
+.title .grid_19 ul {
+	padding-top: 15px;	
+	text-align: right;	
+}
+
+.title .grid_19 ul li {	
+	display: inline;			
+	margin-left: 15px;
+	padding-bottom: 0;	
+}
+
+/****************** miscellanous ****************/
+
+a {
+	font-size: 0.75em;
+	text-decoration: none;
+	color: #7B7B7B;		
+}
+
+.active , a:hover {
+	color:#202020;
+}
+
+/****************** main ****************/
+
+article {
+	margin-bottom: 50px;
+}
+
+article:last-child { /* right article */
+	float: right;	
+}
+
+article h2 {
+	font-weight: normal;
+	line-height: 25px;
+}
+
+article h2:nth-child(2), article h2:nth-child(3) {
+	margin-top: -15px;
+	color: #757575;
+}
+
+article h2:nth-child(3) {
+	padding-bottom: 30px;
+	border-bottom: 1px solid #D2D2D2;	
+}
+
+article p {
+	font-size: 0.8em;
+	line-height: 1.8em;
+	color: #343434;
+}
+
+/****************** footer ****************/
+
+footer {
+	clear: both;
+	border-top: 1px solid #D2D2D2;		
+	padding-top: 10px;		
+}
+
+footer p  {	
+  font-size: 0.75em;
+}
+
+footer a{
+	font-size: 1em;
+}
+
+footer span{
+	color: #7B7B7B;
+}
+
+/****************** desc *********************
+*
+*  created by 	: @mandhalich
+*  source 		: anywhere on the internet
+*  date 		: 18 june 2014 04.35 pm	
+*  location  	: office depan si asus
+*
+/****************** end *********************/

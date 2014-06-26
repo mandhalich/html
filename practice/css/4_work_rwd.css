@@ -1,0 +1,254 @@
+body {
+	font-family: Adelle, arial,"Helvetica Neue", Arial, sans-serif;		
+}
+
+.menu {
+	padding-left: 0;
+}
+
+.menu li {
+	color: #818181;			
+	list-style-type: none;
+	display: inline;	
+}
+
+.menu a {		
+	color: white;
+	background-color: black;		
+}
+
+a {
+	text-decoration: none;
+}
+
+article h2 {
+	border-bottom: 1px solid #D2D2D2;
+}
+
+footer {
+	clear: both;
+	border-top: 1px solid #D2D2D2;				
+}
+
+header h1 {
+	float: left;
+	text-indent: -9999px;	
+}
+
+header h1 a {	
+	background: url(../img/2_logo2.png) no-repeat;
+	width: 175px;		
+	float: left;
+	margin-bottom: -15px;
+}
+
+nav {
+	clear: both;		
+}
+
+
+/***************** media screen ***************
+*			width : 480px
+*
+/***************** header *******************/
+@media only screen and (max-width: 767px) {
+	
+	.container {
+		margin: auto 10px;
+	}
+
+	/*********** header **********/
+	
+	header h1 {		
+		float: left;
+		letter-spacing: -2px;			
+	}
+	
+	.menu a {
+		font-size: 12px;	
+		line-height: 25px;				
+		width: 85px;			
+		padding: 3px 5px;		
+	}
+
+	.menu li{		
+		float: left;	
+	}	
+	
+	/*********** article **********/
+	.main {
+		clear: both;
+	}
+
+	article img {		
+		padding-top: 20px;
+	}
+
+	article h2{
+		padding-bottom: 10px;
+		font-size: 20px;		
+	}	
+
+	article p {
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	/*********** footer **********/
+	footer {		
+		padding-top: 10px;	
+	}	
+
+	footer p {
+		font-size: 16px;
+	}
+} /* end media screen width max 480px */
+
+
+/***************** media screen ***************
+*			width : 768 - 979 px
+*
+/***************** header *******************/
+@media (min-width: 768px) and (max-width: 979px) {
+
+	.container {
+		margin: auto 150px;
+	}
+
+	/*********** header **********/
+
+	.menu a {
+		font-size: 13px;	
+		line-height: 25px;				
+		width: 88px;			
+		padding: 4px 10px;		
+	}
+
+	.menu li{		
+		float: left;	
+	}
+
+	img {
+		width: 100%;
+	}
+
+	article h2{
+		padding-bottom: 15px;
+		font-size: 20px;		
+	}
+
+	article p {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	
+	article img {		
+		padding-top: 25px;
+	}
+
+	/*********** footer **********/
+	footer {		
+		padding-top: 15px;	
+	}	
+
+	footer p {
+		font-size: 13px;
+	}	
+}
+
+
+/***************** media screen ***************
+*			width : 980px
+*
+/*********************************************/
+@media (min-width: 980px) {
+	.container {
+		margin: auto 10px;
+	}
+
+	h1 {
+		background-color: green;
+	}
+	
+	.clear {
+		clear: both;
+	}
+
+	.menu {
+		background-color: yellow;
+	}
+
+	.menu a {
+		font-size: 13px;	
+		line-height: 25px;				
+		width: 88px;			
+		padding: 4px 10px;		
+	}
+
+	.menu li{		
+		float: right;	
+	}
+
+	img {
+		width: 40%;
+	}
+
+	article h2{
+		padding-bottom: 15px;
+		font-size: 20px;		
+	}
+
+	article p {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	
+	article img {		
+		padding-top: 25px;
+	}
+
+	.main article {
+		float: left;
+	}
+
+	.main article:last-child {
+		float: right;
+	}
+
+	/*********** footer **********/
+	footer {		
+		padding-top: 15px;	
+	}	
+
+	footer p {
+		font-size: 13px;
+	}	
+
+	
+}
+
+
+
+
+/***************** media screen ***************
+*			width : 1200px
+*
+/*********************************************/
+@media (min-width: 1200px) {
+	
+
+}
+
+
+/****************** desc *********************
+*
+*  created by 	: @mandhalich
+*  source 		: using breakpoint from twitter bootstrap
+*  date 		: 24 june 2014 11.44 am	
+*  location  	: office
+*
+/****************** end *********************/
