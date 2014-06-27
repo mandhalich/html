@@ -31,21 +31,20 @@ footer {
 }
 
 header h1 {
-	float: left;
-	text-indent: -9999px;	
+	text-indent: -9999px;
+		
 }
 
 header h1 a {	
 	background: url(../img/2_logo2.png) no-repeat;
 	width: 175px;		
 	float: left;
-	margin-bottom: -15px;
+	margin-bottom: -15px;	
 }
 
-nav {
+.clear {
 	clear: both;		
 }
-
 
 /***************** media screen ***************
 *			width : 480px
@@ -60,8 +59,11 @@ nav {
 	/*********** header **********/
 	
 	header h1 {		
-		float: left;
-		letter-spacing: -2px;			
+		float: left;			
+	}
+
+	nav {
+		clear: both;
 	}
 	
 	.menu a {
@@ -76,10 +78,7 @@ nav {
 	}	
 	
 	/*********** article **********/
-	.main {
-		clear: both;
-	}
-
+	
 	article img {		
 		padding-top: 20px;
 	}
@@ -117,9 +116,18 @@ nav {
 
 	.container {
 		margin: auto 150px;
+		max-width: 768px;
 	}
 
 	/*********** header **********/
+
+	header h1 {		
+		float: left;		
+	}
+
+	nav {
+		clear: both;
+	}
 
 	.menu a {
 		font-size: 13px;	
@@ -128,7 +136,7 @@ nav {
 		padding: 4px 10px;		
 	}
 
-	.menu li{		
+	.menu li {		
 		float: left;	
 	}
 
@@ -136,7 +144,7 @@ nav {
 		width: 100%;
 	}
 
-	article h2{
+	article h2 {
 		padding-bottom: 15px;
 		font-size: 20px;		
 	}
@@ -167,19 +175,12 @@ nav {
 /*********************************************/
 @media (min-width: 980px) {
 	.container {
-		margin: auto 10px;
+		margin: auto;
+		max-width: 980px;
 	}
 
-	h1 {
-		background-color: green;
-	}
-	
 	.clear {
 		clear: both;
-	}
-
-	.menu {
-		background-color: yellow;
 	}
 
 	.menu a {
@@ -189,15 +190,16 @@ nav {
 		padding: 4px 10px;		
 	}
 
-	.menu li{		
-		float: right;	
+	.menu {		
+		float: right;	/* jika ingin bikin menu kekanan, floatnya harus di nav bukan di li*/
+		margin-top: 3px
 	}
 
 	img {
-		width: 40%;
+		width: 90%;
 	}
 
-	article h2{
+	article h2 {
 		padding-bottom: 15px;
 		font-size: 20px;		
 	}
@@ -211,13 +213,20 @@ nav {
 		padding-top: 25px;
 	}
 
-	.main article {
-		float: left;
+	article {
+		width: 450px;
+		margin-top: 0 5px;		
+		padding: auto;
 	}
 
-	.main article:last-child {
-		float: right;
+	article:first-child {
+		float: left;		
 	}
+
+	article:last-child {		
+		float: right;	
+	}
+
 
 	/*********** footer **********/
 	footer {		
@@ -226,12 +235,8 @@ nav {
 
 	footer p {
 		font-size: 13px;
-	}	
-
-	
+	}		
 }
-
-
 
 
 /***************** media screen ***************
@@ -248,7 +253,7 @@ nav {
 *
 *  created by 	: @mandhalich
 *  source 		: using breakpoint from twitter bootstrap
-*  date 		: 24 june 2014 11.44 am	
+*  date 		: 27 june 2014 11.44 am	
 *  location  	: office
 *
 /****************** end *********************/
