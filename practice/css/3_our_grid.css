@@ -58,11 +58,11 @@ header h1 span {
 
 
 /****************** main ****************/
-
 article h2{
 	letter-spacing: -0.5px;
 	border-bottom: solid 1px #e4e4e4;	
 	font-weight: normal;
+	padding-bottom: 25px;
 }
 
 article h2 span{

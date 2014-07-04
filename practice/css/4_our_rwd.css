@@ -8,6 +8,18 @@ body {
 }
 
 /*** header ***/
+header h1 {
+	text-indent: -9999px;
+	float: left;
+}
+
+header h1 a {	
+	background: url(../img/2_logo2.png) no-repeat;
+	width: 175px;		
+	float: left;	
+	margin-bottom: -15px;	
+}
+
 .menu {
 	padding-left: 0;
 }
@@ -33,23 +45,10 @@ article h2 {
 	line-height: 25px;
 }
 
-article h2:nth-child(3) {
-	border-bottom: 1px solid #D2D2D2;
-	color: #757575;	
-	margin-top: -15px;
+article h2 span{
+	color: #797979;	
 }
 
-header h1 {
-	text-indent: -9999px;
-	float: left;
-}
-
-header h1 a {	
-	background: url(../img/2_logo2.png) no-repeat;
-	width: 175px;		
-	float: left;
-	margin-bottom: -15px;	
-}
 
 /*** miscellanous ***/
 a {
@@ -103,37 +102,70 @@ footer {
 		float: left;	
 	}	
 	
-	/*** article ***/	
-	article img {		
+	/*** main article ***/	
+	img {		
 		padding-top: 25px;
 		width: 100%;
 	}
 
-	article h2 {		
+	article h2, aside h2 {		
 		font-size: 20px;	
 		line-height: 20px;	
-	}	
-
-	article h2:nth-child(3) {
-		padding-bottom: 20px;		
-	}	
+	}		
+	
+	article h2{
+		letter-spacing: -0.5px;
+		border-bottom: solid 1px #e4e4e4;	
+		font-weight: normal;
+		padding-bottom: 25px;
+	}
 
 	article p {
 		font-size: 12px;
 		line-height: 16px;
 	}
 
-	
+	/*** aside ***/
+	aside {
+		height: 250px;	
+		background-color: #292929;
+		font-family: helvetica, sans-serif;		
+	}
+
+	aside h2 {		
+		color: white;
+		font-weight: normal;
+		padding-left: 16px;
+		padding-top: 16px;
+	}
+
+	aside li{
+		list-style-type: square;
+		padding-bottom: 10px;		
+		color: #9E9E94;
+	}
+
+	aside li a {
+		text-decoration: none;	
+		color: #9D9C97;
+		font-size: 12px;	
+	}
+
+	aside li a:hover {
+		color: #ffffff;
+	}
+
 	/*** footer ***/
 	footer {		
 		padding-top: 10px;	
+		border-top: 1px solid #D2D2D2;		
+		margin-top: 16px;			
 	}	
 
 	footer p {
 		font-size: 12px;
 	}
-} 
-
+}
 /*********************** media screen *****************************
 *		
 *					width :	481 - 767 px
@@ -150,7 +182,7 @@ footer {
 	nav {
 		clear: both;
 	}
-	
+
 	.menu a {
 		font-size: 12px;	
 		line-height: 25px;				
@@ -163,19 +195,12 @@ footer {
 	}	
 	
 	/*** article ***/
-	
-	article img {		
-		padding-top: 25px;
-		width: 100%;
-	}
-
 	article h2 {		
 		font-size: 20px;	
-		line-height: 20px;			
-	}	
-
-	article h2:nth-child(3) {
-		padding-bottom: 20px;		
+		line-height: 20px;	
+		border-bottom: solid 1px #e4e4e4;	
+		font-weight: normal;
+		padding-bottom: 25px;		
 	}	
 
 	article p {
@@ -183,15 +208,57 @@ footer {
 		line-height: 20px;
 	}
 
+	article h2, aside h2 {		
+		font-size: 20px;	
+		line-height: 20px;	
+	}	
+
+	img {
+		width: 100%;
+		padding-top: 25px;
+	}
+
+	/*** aside ***/
+	aside {
+		height: 250px;	
+		background-color: #292929;
+		font-family: helvetica, sans-serif;		
+	}
+
+	aside h2 {		
+		color: white;
+		font-weight: normal;
+		padding-left: 16px;
+		padding-top: 16px;
+	}
+
+	aside li{
+		list-style-type: square;
+		padding-bottom: 10px;		
+		color: #9E9E94;
+	}
+
+	aside li a {
+		text-decoration: none;	
+		color: #9D9C97;
+		font-size: 13px;	
+	}
+
+	aside li a:hover {
+		color: #ffffff;
+	}
+
 	/*** footer ***/
 	footer {		
 		padding-top: 10px;	
+		border-top: 1px solid #D2D2D2;		
+		margin-top: 16px;			
 	}	
 
 	footer p {
 		font-size: 12px;
 	}
-} 
+}
 
 /*********************** media screen *****************************
 *		
@@ -205,11 +272,11 @@ footer {
 		max-width: 480px;
 	}
 
-	/*** header ***/
+	/*** header ***/	
 	nav {
 		clear: both;
 	}
-	
+
 	.menu a {
 		font-size: 13px;	
 		line-height: 25px;				
@@ -219,32 +286,62 @@ footer {
 
 	.menu li{		
 		float: left;	
-	}	
-	
-	/*** article ***/	
-	article img {		
+	}
+
+		/*** article ***/	
+	img {		
 		padding-top: 25px;
 		width: 100%;
 	}
-
+	
 	article h2 {		
-		font-size: 24px;		
-		line-height: 25px;
-	}	
-
-	article h2:nth-child(3) {
-		padding-bottom: 30px;
+		font-size: 24px;	
+		line-height: 25px;	
+		border-bottom: solid 1px #e4e4e4;	
+		font-weight: normal;
+		padding-bottom: 25px;		
 	}
-
+	
 	article p {
 		font-size: 14px;
 		line-height: 20px;
 	}
 
+	/*** aside ***/
+	aside {
+		height: 250px;	
+		background-color: #292929;
+		font-family: helvetica, sans-serif;		
+	}
+
+	aside h2 {		
+		color: white;
+		font-weight: normal;
+		padding-left: 16px;
+		padding-top: 16px;
+	}
+
+	aside li{
+		list-style-type: square;
+		padding-bottom: 10px;		
+		color: #9E9E94;
+	}
+
+	aside li a {
+		text-decoration: none;	
+		color: #9D9C97;
+		font-size: 14px;	
+	}
+
+	aside li a:hover {
+		color: #ffffff;
+	}
 
 	/*** footer ***/
 	footer {		
 		padding-top: 10px;	
+		border-top: 1px solid #D2D2D2;		
+		margin-top: 16px;			
 	}	
 
 	footer p {
@@ -289,19 +386,25 @@ footer {
 	}	
 
 	/*** article ***/
-	article {
-		width: 470px;
-		margin-bottom: 50px;
-		margin: auto 5px;
+	.main {
+		width: 657px;		
+	}
+
+	.main  {
+		float: left;
+	}
+
+	aside {
+		float: right;
+	}
+
+	.two_col {
+       -webkit-column-count: 2;
+       -webkit-column-gap: 20px;
 	}
 	
 	article h2{
 		line-height: 25px;	
-	}
-
-	article h2:nth-child(3) {
-		padding-bottom: 25px;
-		font-size: 24px;			
 	}
 
 	article p {
@@ -309,32 +412,49 @@ footer {
 		line-height: 24px;
 	}
 	
-	article img {		
+	.main img {		
 		padding-top: 10px;
+		width: 100%;
 	}
 
-	article {
-		width: 462px;
-		margin: 0 5px;
-		padding: auto;			
+	aside {
+		height: 490px;	
+		width: 245px;
+		background-color: #292929;
+		font-family: helvetica, sans-serif;		
+		margin-top: 10px;		
 	}
 
-	article:first-child {
-		float: left;		
+	/*** aside ***/
+
+	aside h2 {		
+		color: white;
+		font-weight: normal;
+		padding-left: 16px;
+		padding-top: 16px;
 	}
 
-	article:last-child {		
-		float: right;	
-		margin-left: -15px;
+	aside li{
+		list-style-type: square;
+		padding-bottom: 10px;		
+		color: #9E9E94;
 	}
 
-	h2:nth-child(3) {
-		padding-bottom: 30px;		
+	aside li a {
+		text-decoration: none;	
+		color: #9D9C97;
+		font-size: 14px;	
 	}
 
-	/*** footer ***/
+	aside li a:hover {
+		color: #ffffff;
+	}
+	
+	/*** footer ***/	
 	footer {		
-		padding-top: 15px;	
+		padding-top: 10px;	
+		border-top: 1px solid #D2D2D2;		
+		margin-top: 16px;			
 	}	
 
 	footer p {
@@ -345,7 +465,7 @@ footer {
 /****************** desc ******************************************************
 *
 *  created by 	: @mandhalich
-*  source 		: using breakpoint ( mix from twitter bootstrapp and 960gs) and using px
+*  source 		: using breakpoint ( mix from twitter bootstrapp and 960gs), and using em 
 *  date 		: 30 june 2014 11.44 am	
 *  location  	: office
 *

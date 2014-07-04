@@ -102,7 +102,7 @@ blockquote p:before,
 blockquote p:after {
 	font-size: 40px;
 	color: #bfbfbf;
-	font-style: italic
+	font-style: italic;
 }
 
 blockquote p{
