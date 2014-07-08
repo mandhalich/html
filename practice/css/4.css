@@ -140,7 +140,7 @@ footer {
 	.menu li{		
 		float: left;	
 	}	
-	
+
 	/*** main article ***/	
 	img {		
 		padding-top: 25px;
@@ -151,7 +151,7 @@ footer {
 		font-size: 20px;	
 		line-height: 20px;	
 	}		
-	
+
 	article h2{
 		letter-spacing: -0.5px;
 		border-bottom: solid 1px #e4e4e4;	
@@ -261,7 +261,7 @@ footer {
 *
 /******************************************************************/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-	
+
 	.container {
 		margin: auto;
 		max-width: 480px;
@@ -296,7 +296,7 @@ footer {
 		font-weight: normal;
 		padding-bottom: 25px;		
 	}
-	
+
 	article p {
 		font-size: 14px;
 		line-height: 20px;
@@ -341,7 +341,7 @@ footer {
 	nav {
 		margin-right: 5px;
 	}
-	
+
 	.menu a {
 		font-size: 13px;	
 		line-height: 25px;				
@@ -387,7 +387,7 @@ footer {
 		padding-top: 10px;	
 		float: left;
 	}
-	
+
 	/** footer **/	
 	footer {		
 		padding-top: 10px;	
