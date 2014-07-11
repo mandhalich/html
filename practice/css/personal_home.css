@@ -1,0 +1,32 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/** header **/
+
+
+.header_img img{
+	width: 6em;
+	height: 6em;
+	border-radius: 3em;
+}
+
+header blockquote {
+	font-size: 2em;
+	margin-bottom: 2em;
+	text-align: right;
+	font-style: italic;
+}
+
+/*********************** media screen *****************************
+*
+*							480px
+*
+/******************************************************************/
+@media only screen and (max-width: 30em) {
+
+.content img {
+	width: 100%;
+}
+
+}
