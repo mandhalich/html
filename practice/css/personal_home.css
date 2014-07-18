@@ -3,8 +3,6 @@ body {
 }
 
 /** header **/
-
-
 .header_img img{
 	width: 6em;
 	height: 6em;
@@ -14,9 +12,17 @@ body {
 header blockquote {
 	font-size: 2em;
 	margin-bottom: 2em;
-	text-align: right;
 	font-style: italic;
 }
+
+a {
+	text-decoration: none;
+}
+
+.clear {
+	clear: both;
+}
+
 
 /*********************** media screen *****************************
 *
@@ -25,8 +31,81 @@ header blockquote {
 /******************************************************************/
 @media only screen and (max-width: 30em) {
 
-.content img {
-	width: 100%;
-}
+	.container {
+		max-width: 30em;
+		margin: auto;
+	}
 
+	/** header **/
+	header blockquote {
+		font-size: 1em;
+		margin-bottom: 1em;
+		font-style: italic;
+		text-align: center;
+	}
+
+	.header_img img{
+		display: block;
+		margin: 0 auto;
+	}
+
+	/** nav **/
+	nav {
+		max-width: 30em;
+		text-align: center;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
+
+	nav ul li {
+		display: inline;
+		text-align: center;
+		border-radius: 0.5em 1em 0.5em;
+  	background: #BADA55;
+  	text-align: center;
+	}
+
+	nav ul {
+		padding-left: 0.1em;
+	}
+
+	nav ul li a {
+		list-style-type: none;
+		font-size: 0.8em;
+
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+
+	/** content **/
+	.content h2 {
+		letter-spacing: -0.5px;
+		border-bottom: solid 1px #D2D2D2;
+		font-weight: normal;
+		padding-bottom: 0.5em;
+		text-align: center;
+	}
+
+	.content p {
+		font-size: 0.8em;
+		line-height: 1.5em;
+	}
+
+	.content img {
+		width: 100%;
+	}
+
+	/*** footer ***/
+	footer {
+		font-size: 0.8em;
+		border-top: 1px solid #D2D2D2;
+		padding-top: 0.6em;
+		margin-top: 1em;
+	}
+
+	footer ul {
+		list-style-type: none;
+		padding-left: 0;
+		text-align: center;
+	}
 }
