@@ -1,0 +1,479 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*** header ***/
+header h1 {
+	text-indent: -9999px;
+	float: left;
+}
+
+header h1 a {
+	background: url(../img/2_logo2.png) no-repeat;
+	width: 175px;
+	float: left;
+	margin-bottom: -15px;
+}
+
+.menu {
+	padding-left: 0;
+}
+
+.menu li {
+	color: #818181;
+	list-style-type: none;
+	display: inline;
+}
+
+.menu a {
+	color: white;
+	background-color: black;
+}
+
+.menu a:hover {
+	color: #b5b5b5;
+}
+
+/*** article ***/
+article h2 {
+	font-weight: normal;
+	line-height: 25px;
+}
+
+article h2 span{
+	color: #797979;
+}
+
+/*** miscellanous ***/
+a {
+	text-decoration: none;
+	color: #7B7B7B;
+}
+
+.active , a:hover {
+	color:#202020;
+}
+
+.clear {
+	clear: both;
+}
+
+.readmore {
+	color: white;
+	text-transform: uppercase;
+	background-color: black;
+	width: 6.5em;
+	margin-top: 1.5em;
+	padding: 0.3em 0.3em;
+	margin-bottom: 2em;
+	/*width: 65px;
+	margin-top: 20px;
+	padding: 3px 7px;
+	margin-bottom: 25px;*/
+}
+
+/** blockquote **/
+blockquote {
+	position: relative;
+	margin-left: 0;
+	font-style: italic;
+}
+
+blockquote p:before,
+blockquote p:after {
+	font-size: 40px;
+	color: #bfbfbf;
+	font-style: italic;
+}
+
+blockquote p {
+	padding-left: 25px;
+}
+
+blockquote p:first-child:before {
+	content: '“';
+	position: absolute;
+	top: -10px;
+	left: 0;
+}
+
+blockquote p:last-child:after {
+	content: '”';
+	float: right;
+	position: absolute;
+	bottom: -25px;
+	right: 0;
+}
+
+
+/*** footer ***/
+footer span {
+	color: #7B7B7B;
+}
+
+footer {
+	clear: both;
+	border-top: 1px solid #D2D2D2;
+}
+
+/*********************** media screen *****************************
+*
+*							480px
+*
+/******************************************************************/
+@media only screen and (max-width: 30em) {
+
+	.container {
+		margin: auto;
+		/*max-width: 480px;*/
+		max-width: 30em;
+	}
+
+	/*** header ***/
+	nav {
+		clear: both;
+	}
+
+	.menu a {
+		/*font-size: 12px;*/
+		font-size: 0.8em;
+		line-height: 25px;
+		width: 85px;
+		padding: 3px 5px;
+	}
+
+	.menu li{
+		float: left;
+	}
+
+	/*** main article ***/
+	img {
+		/*padding-top: 25px;*/
+		padding-top: 0.75em;
+		width: 100%;
+	}
+
+	article h2, aside h2 {
+		/*font-size: 20px;
+		line-height: 20px;*/
+		font-size: 1.25em;
+		line-height: 1.25em;
+	}
+
+	article h2{
+		/*letter-spacing: -0.5px;*/
+		letter-spacing: -0.03em;
+		border-bottom: solid 1px #e4e4e4;
+		font-weight: normal;
+		/*padding-bottom: 25px;*/
+		padding-bottom: 1.5em;
+	}
+
+	article p {
+		/*font-size: 12px;
+		line-height: 16px;*/
+		font-size: 0.8em;
+		line-height: 1.5em;
+	}
+
+	blockquote {
+		/*margin-top: 30px;
+		margin-bottom: 30px;*/
+		margin-top: 1.8em;
+		margin-bottom: 1.8em;
+	}
+
+	/*** miscellanous ***/
+	.readmore {
+		/*font-size: 9px;*/
+		font-size: 0.6em;
+		letter-spacing: -0.3px;
+	}
+
+	/*** footer ***/
+	footer {
+		/*padding-top: 10px;
+		margin-top: 16px;*/
+		padding-top: 0.6em;
+		margin-top: 1em;
+		border-top: 1px solid #D2D2D2;
+	}
+
+	footer p {
+		/*font-size: 12px;*/
+		font-size: 0.75em;
+	}
+}
+
+/*********************** media screen *****************************
+*
+*					width :	481 - 767 px
+*
+/******************************************************************/
+@media only screen and (min-width: 30.1em) and (max-width: 48em) {
+	.container {
+		margin: auto;
+		/*max-width: 480px;*/
+		max-width: 30em;
+	}
+
+	/*** header ***/
+	nav {
+		clear: both;
+	}
+
+	.menu a {
+		font-size: 0.8em;
+		line-height: 25px;
+		width: 85px;
+		padding: 3px 5px;
+	}
+
+	.menu li{
+		float: left;
+	}
+
+		/*** article ***/
+	article h2 {
+		/*font-size: 20px;
+		line-height: 20px;
+		padding-bottom: 25px;*/
+		border-bottom: solid 1px #e4e4e4;
+		font-weight: normal;
+		font-size: 1.25em;
+		line-height: 1.25em;
+		padding-bottom: 1.5em;
+	}
+
+	article p {
+		/*font-size: 13px;
+		line-height: 20px;*/
+		font-size: 0.8em;
+		line-height: 1.25em;
+	}
+
+	article h2, aside h2 {
+		/*font-size: 20px;
+		line-height: 20px;*/
+		font-size: 1.25em;
+		line-height: 1.25em;
+	}
+
+	img {
+		width: 100%;
+		/*padding-top: 25px;*/
+		padding-top: 1.25em;
+	}
+
+	/*** miscellanous ***/
+	.readmore {
+		/*font-size: 10px;*/
+		font-size: 0.7em;
+		width: 5.5em;
+	}
+
+	/*** footer ***/
+	footer {
+		border-top: 1px solid #D2D2D2;
+		/*padding-top: 10px;
+		margin-top: 16px;*/
+		padding-top: 0.6em;
+		margin-top: 1em;
+	}
+
+	footer p {
+		/*font-size: 12px;*/
+		font-size: 0.8em;
+	}
+}
+
+/*********************** media screen *****************************
+*
+*					width :	768 - 959 px
+*
+/******************************************************************/
+@media only screen and (min-width: 48.1em) and (max-width: 60em) {
+
+	.container {
+		margin: auto;
+		max-width: 30em;
+	}
+
+	/*** header ***/
+	nav {
+		clear: both;
+	}
+
+	.menu a {
+		/*font-size: 13px;*/
+		font-size: 0.8em;
+		line-height: 25px;
+		width: 85px;
+		padding: 3px 5px;
+	}
+
+	.menu li{
+		float: left;
+	}
+
+		/*** article ***/
+	img {
+		/*padding-top: 25px;*/
+		padding-top: 1.5em;
+		width: 100%;
+	}
+
+	article h2 {
+		/*font-size: 24px;
+		line-height: 25px;
+		padding-bottom: 25px;*/
+		border-bottom: solid 1px #e4e4e4;
+		font-weight: normal;
+		font-size: 1.5em;
+		line-height: 1.5em;
+		padding-bottom: 1.5em;
+	}
+
+	article p {
+		/*font-size: 14px;
+		line-height: 20px;*/
+		font-size: 0.8em;
+		line-height: 1.25em;
+	}
+
+	/*** miscellanous ***/
+	.readmore {
+		/*font-size: 11px;*/
+		font-size: 0.7em;
+		width: 5.5em;
+	}
+
+	/*** footer ***/
+	footer {
+		border-top: 1px solid #D2D2D2;
+		/*margin-top: 16px;
+		padding-top: 10px;*/
+		margin-top: 1em;
+		padding-top: 0.6em;
+	}
+
+	footer p {
+		/*font-size: 13px;*/
+		font-size: 0.8em;
+	}
+}
+
+/*********************** media screen *****************************
+*
+*					min width :	960 px
+*
+/******************************************************************/
+@media only screen and (min-width: 60.1em) {
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+		width: 59em;
+	}
+
+
+	/*** header ***/
+	header h1 {
+		/*margin-left: 5px;*/
+		float: left;
+		margin-left: 0.3em;
+	}
+
+	nav {
+		/*margin-right: 5px;*/
+		margin-right: 0.3em;
+	}
+
+	.menu a {
+		/*font-size: 13px;*/
+		font-size: 0.8em;
+		line-height: 25px;
+		width: 88px;
+		padding: 4px 10px;
+	}
+
+	.menu {
+		float: right;	/* jika ingin bikin menu kekanan, floatnya harus di nav bukan di li*/
+		margin-top: 3px;
+		padding-top: 25px;
+	}
+
+	article h2{
+		letter-spacing: -0.5px;
+		border-bottom: solid 1px #e4e4e4;
+		font-weight: normal;
+		/*padding-bottom: 25px;
+		line-height: 25px;*/
+		padding-bottom: 1.5em;
+		line-height: 1.5em;
+	}
+
+	article p {
+		/*font-size: 14px;
+		line-height: 24px;*/
+		font-size: 0.9em;
+		line-height: 1.5em;
+	}
+
+	/*** miscellanous ***/
+	.readmore {
+		/*font-size: 11px;*/
+		font-size: 0.7em;
+		width: 5.5em;
+	}
+
+	/** article **/
+	article {
+		/*width: 340px;*/
+		width: 21em;
+		float: left;
+	}
+
+	article:nth-child(2) {
+		/*margin-left: 15px;*/
+		margin-left: 1em;
+	}
+
+	img {
+		/*padding-top: 10px;*/
+		padding-top: 0.6em;
+		float: left;
+	}
+
+	/** footer **/
+	footer {
+		/*padding-top: 10px;
+		margin-top: 16px;*/
+		border-top: 1px solid #D2D2D2;
+		margin-top: 1em;
+		padding-top: 0.6em;
+	}
+
+	footer p {
+		/*font-size: 13px;*/
+		font-size: 0.8em;
+	}
+
+	blockquote {
+		/*width: 205px;
+		margin-left: 5px;*/
+		float: right;
+		width: 12.8em;
+		margin-left: 0.3em;
+	}
+
+	.callout {
+		/*width: 235px;
+		height: 232px;
+		margin: 10px 5px 15px 5px;*/
+		width: 14em;
+		height: 14.5em;
+		margin: 0.6em 0.3em 1em 0.3em;
+		background-color: #2c2c2c;
+		float: right;
+	}
+}
