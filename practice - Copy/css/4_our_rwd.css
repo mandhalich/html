@@ -1,0 +1,473 @@
+/**************************** global *****************************
+*
+*							
+*
+/**************************** global *****************************/
+body {
+	font-family: Arial, Helvetica, sans-serif;		
+}
+
+/*** header ***/
+header h1 {
+	text-indent: -9999px;
+	float: left;
+}
+
+header h1 a {	
+	background: url(../img/2_logo2.png) no-repeat;
+	width: 175px;		
+	float: left;	
+	margin-bottom: -15px;	
+}
+
+.menu {
+	padding-left: 0;
+}
+
+.menu li {
+	color: #818181;			
+	list-style-type: none;
+	display: inline;	
+}
+
+.menu a {		
+	color: white;
+	background-color: black;		
+}
+
+.menu a:hover {
+	color: #b5b5b5;
+}
+
+/*** article ***/
+article h2 {
+	font-weight: normal;	
+	line-height: 25px;
+}
+
+article h2 span{
+	color: #797979;	
+}
+
+
+/*** miscellanous ***/
+a {
+	text-decoration: none;
+	color: #7B7B7B;		
+}
+
+.active , a:hover {
+	color:#202020;
+}
+
+.clear {
+	clear: both;		
+}
+
+/*** footer ***/
+footer span {
+	color: #7B7B7B;
+}
+
+footer {
+	clear: both;
+	border-top: 1px solid #D2D2D2;				
+}
+
+/*********************** media screen *****************************
+*		
+*							480px
+*
+/******************************************************************/
+@media only screen and (max-width: 480px) {
+	
+	.container {
+		margin: auto;
+		max-width: 480px;
+	}
+
+	/*** header ***/	
+	nav {
+		clear: both;
+	}
+	
+	.menu a {
+		font-size: 12px;	
+		line-height: 25px;				
+		width: 85px;			
+		padding: 3px 5px;		
+	}
+
+	.menu li{		
+		float: left;	
+	}	
+	
+	/*** main article ***/	
+	img {		
+		padding-top: 25px;
+		width: 100%;
+	}
+
+	article h2, aside h2 {		
+		font-size: 20px;	
+		line-height: 20px;	
+	}		
+	
+	article h2{
+		letter-spacing: -0.5px;
+		border-bottom: solid 1px #e4e4e4;	
+		font-weight: normal;
+		padding-bottom: 25px;
+	}
+
+	article p {
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	/*** aside ***/
+	aside {
+		height: 250px;	
+		background-color: #292929;
+		font-family: helvetica, sans-serif;		
+	}
+
+	aside h2 {		
+		color: white;
+		font-weight: normal;
+		padding-left: 16px;
+		padding-top: 16px;
+	}
+
+	aside li{
+		list-style-type: square;
+		padding-bottom: 10px;		
+		color: #9E9E94;
+	}
+
+	aside li a {
+		text-decoration: none;	
+		color: #9D9C97;
+		font-size: 12px;	
+	}
+
+	aside li a:hover {
+		color: #ffffff;
+	}
+
+	/*** footer ***/
+	footer {		
+		padding-top: 10px;	
+		border-top: 1px solid #D2D2D2;		
+		margin-top: 16px;			
+	}	
+
+	footer p {
+		font-size: 12px;
+	}
+}
+
+/*********************** media screen *****************************
+*		
+*					width :	481 - 767 px
+*
+/******************************************************************/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	
+	.container {
+		margin: auto;
+		max-width: 480px;
+	}
+
+	/*** header ***/	
+	nav {
+		clear: both;
+	}
+
+	.menu a {
+		font-size: 12px;	
+		line-height: 25px;				
+		width: 85px;			
+		padding: 3px 5px;		
+	}
+
+	.menu li{		
+		float: left;	
+	}	
+	
+	/*** article ***/
+	article h2 {		
+		font-size: 20px;	
+		line-height: 20px;	
+		border-bottom: solid 1px #e4e4e4;	
+		font-weight: normal;
+		padding-bottom: 25px;		
+	}	
+
+	article p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+	article h2, aside h2 {		
+		font-size: 20px;	
+		line-height: 20px;	
+	}	
+
+	img {
+		width: 100%;
+		padding-top: 25px;
+	}
+
+	/*** aside ***/
+	aside {
+		height: 250px;	
+		background-color: #292929;
+		font-family: helvetica, sans-serif;		
+	}
+
+	aside h2 {		
+		color: white;
+		font-weight: normal;
+		padding-left: 16px;
+		padding-top: 16px;
+	}
+
+	aside li{
+		list-style-type: square;
+		padding-bottom: 10px;		
+		color: #9E9E94;
+	}
+
+	aside li a {
+		text-decoration: none;	
+		color: #9D9C97;
+		font-size: 13px;	
+	}
+
+	aside li a:hover {
+		color: #ffffff;
+	}
+
+	/*** footer ***/
+	footer {		
+		padding-top: 10px;	
+		border-top: 1px solid #D2D2D2;		
+		margin-top: 16px;			
+	}	
+
+	footer p {
+		font-size: 12px;
+	}
+}
+
+/*********************** media screen *****************************
+*		
+*					width :	768 - 959 px
+*
+/******************************************************************/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	.container {
+		margin: auto;
+		max-width: 480px;
+	}
+
+	/*** header ***/	
+	nav {
+		clear: both;
+	}
+
+	.menu a {
+		font-size: 13px;	
+		line-height: 25px;				
+		width: 85px;			
+		padding: 3px 5px;		
+	}
+
+	.menu li{		
+		float: left;	
+	}
+
+		/*** article ***/	
+	img {		
+		padding-top: 25px;
+		width: 100%;
+	}
+	
+	article h2 {		
+		font-size: 24px;	
+		line-height: 25px;	
+		border-bottom: solid 1px #e4e4e4;	
+		font-weight: normal;
+		padding-bottom: 25px;		
+	}
+	
+	article p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	/*** aside ***/
+	aside {
+		height: 250px;	
+		background-color: #292929;
+		font-family: helvetica, sans-serif;		
+	}
+
+	aside h2 {		
+		color: white;
+		font-weight: normal;
+		padding-left: 16px;
+		padding-top: 16px;
+	}
+
+	aside li{
+		list-style-type: square;
+		padding-bottom: 10px;		
+		color: #9E9E94;
+	}
+
+	aside li a {
+		text-decoration: none;	
+		color: #9D9C97;
+		font-size: 14px;	
+	}
+
+	aside li a:hover {
+		color: #ffffff;
+	}
+
+	/*** footer ***/
+	footer {		
+		padding-top: 10px;	
+		border-top: 1px solid #D2D2D2;		
+		margin-top: 16px;			
+	}	
+
+	footer p {
+		font-size: 13px;
+	}
+} 
+
+/*********************** media screen *****************************
+*		
+*					min width :	960 px
+*
+/******************************************************************/
+@media only screen and (min-width: 960px) {
+	
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+		width: 945px;
+	}
+
+	/*** header ***/
+	header h1 {
+		float: left;		
+		margin-left: 5px;
+	}
+
+	nav {
+		margin-right: 5px;
+	}
+
+	.menu a {
+		font-size: 13px;	
+		line-height: 25px;				
+		width: 88px;			
+		padding: 4px 10px;
+	}
+
+	.menu {		
+		float: right;	/* jika ingin bikin menu kekanan, floatnya harus di nav bukan di li*/
+		margin-top: 3px;		
+		padding-top: 25px;	
+	}	
+
+	/*** article ***/
+	.main {
+		width: 657px;		
+	}
+
+	.main  {
+		float: left;
+	}
+
+	aside {
+		float: right;
+	}
+
+	.two_col {
+       -webkit-column-count: 2;
+       -webkit-column-gap: 20px;
+	}
+	
+	article h2{
+		line-height: 25px;	
+	}
+
+	article p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	
+	.main img {		
+		padding-top: 10px;
+		width: 100%;
+	}
+
+	aside {
+		height: 490px;	
+		width: 245px;
+		background-color: #292929;
+		font-family: helvetica, sans-serif;		
+		margin-top: 10px;		
+	}
+
+	/*** aside ***/
+
+	aside h2 {		
+		color: white;
+		font-weight: normal;
+		padding-left: 16px;
+		padding-top: 16px;
+	}
+
+	aside li{
+		list-style-type: square;
+		padding-bottom: 10px;		
+		color: #9E9E94;
+	}
+
+	aside li a {
+		text-decoration: none;	
+		color: #9D9C97;
+		font-size: 14px;	
+	}
+
+	aside li a:hover {
+		color: #ffffff;
+	}
+	
+	/*** footer ***/	
+	footer {		
+		padding-top: 10px;	
+		border-top: 1px solid #D2D2D2;		
+		margin-top: 16px;			
+	}	
+
+	footer p {
+		font-size: 13px;
+	}		
+}
+
+/****************** desc ******************************************************
+*
+*  created by 	: @mandhalich
+*  source 		: using breakpoint ( mix from twitter bootstrapp and 960gs), and using em 
+*  date 		: 30 june 2014 11.44 am	
+*  location  	: office
+*
+/****************** end ******************************************************/

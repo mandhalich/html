@@ -1,0 +1,131 @@
+body {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/****************** header ****************/
+
+.title h1 {
+	letter-spacing: -2px;		
+}
+
+.title h1 {
+	float: left;
+	text-indent: -9999px;	
+	letter-spacing: -2px;
+}
+
+.title h1 a{
+	background: url(../img/2_logo2.png) no-repeat;
+	width: 175px;	
+	float: left;	
+}
+
+header h1 span {
+	font-weight: normal;
+}
+
+.title .grid_5 { /* logo */
+	float: left; 
+}
+
+.title .grid_19 { /* nav */
+	float: right;	
+	margin-top: 3px;		
+}
+
+.title .grid_19 ul {
+	padding-top: 15px;	
+	text-align: right;	
+}
+
+.title .grid_19 ul li {	
+	display: inline;			
+	margin-left: 15px;
+	padding-bottom: 0;	
+}
+
+/****************** miscellanous ****************/
+
+.title a , a {
+	font-size: 0.75em;
+	text-decoration: none;
+	color: #7B7B7B;		
+}
+
+.title .active , a:hover {
+	color:#202020;
+}
+
+
+/****************** main ****************/
+article h2{
+	letter-spacing: -0.5px;
+	border-bottom: solid 1px #e4e4e4;	
+	font-weight: normal;
+	padding-bottom: 25px;
+}
+
+article h2 span{
+	color: #797979;	
+}
+
+article .content{
+	font-size: 0.8em;
+	line-height: 20px;
+}
+
+article .grid_9{
+	margin-bottom: 20px;		
+}
+
+aside {
+	height: 530px;	
+	background-color: #292929;
+	font-family: helvetica, sans-serif;		
+}
+
+aside h2 {		
+	color: white;
+	font-weight: normal;
+	padding-left: 15px;
+}
+
+aside ul {
+	padding-left: 35px;	
+} 
+
+aside li{
+	list-style-type: square;
+	padding-bottom: 10px;		
+	color: #9E9E94;
+}
+
+aside li a {
+	text-decoration: none;	
+	color: #9D9C97;
+	font-size: 0.9em;	
+}
+
+aside li a:hover {
+	color: #ffffff;
+}
+
+/****************** footer ****************/
+
+footer {
+	clear: both;
+	border-top: 1px solid #D2D2D2;		
+	padding-top: 10px;		
+}
+
+footer p  {	
+  font-size: 0.75em;
+}
+
+footer a{
+	font-size: 1em;
+}
+
+footer span{
+	color: #7B7B7B;
+}
