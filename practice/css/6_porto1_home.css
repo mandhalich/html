@@ -2,6 +2,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+/** miscellaneous **/
 
 a {
 	text-decoration: none;
@@ -11,7 +12,7 @@ a {
 	clear: both;
 }
 
-
+/** header **/
 
 .header_img img{
 		display: block;
@@ -19,11 +20,50 @@ a {
 		padding-top: 1.25em;
 }
 
+/** footer **/
+
+footer {
+	clear: both;
+}
+
+footer ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+footer ul li {
+	display: inline-block;
+}
+
+footer, footer a {
+	color: #706b6b;
+}
+
+footer li:first-child:before {
+	content: "\00a9 2014 ";
+}
+
+footer li:first-child:after {
+	content: " | ";
+}
+
+footer a:hover {
+	color: #F29222;
+}
+
+footer {
+	border-top: 1px solid #D2D2D2;
+	padding-top: 0.6em;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+
 /*********************** media screen *****************************
 *
-*							480px
+*							480px / 30 em
 *
 /******************************************************************/
+
 @media only screen and (max-width: 30em) {
 
 	.container {
@@ -32,6 +72,7 @@ a {
 	}
 
 	/** header **/
+
 	.header_img img{
 		width: 7em;
 		height: 7em;
@@ -39,14 +80,10 @@ a {
 		padding-top: 1.25em;
 	}
 
-	/** nav **/
-	nav ul li a {
-		font-size: 0.8em;
-	}
+	/** navigation **/
 
-	/*** footer ***/
-	footer {
-		font-size: 0.7em;
+	nav ul li a, footer {
+		font-size: 0.8em;
 	}
 }
 
@@ -55,6 +92,7 @@ a {
 *					width :	0 - 48em
 *
 /******************************************************************/
+
 @media only screen and (max-width: 48em) {
 
 	/** content **/
@@ -70,14 +108,15 @@ a {
 *					width :	30.1em - 60 em
 *
 /******************************************************************/
-@media only screen and (min-width: 30.1em) and (max-width: 60em) {
 
-	/** header **/
+@media only screen and (min-width: 30.1em) and (max-width: 60em) {
 
 	.container {
 		margin: auto;
 		max-width: 30em;
 	}
+
+	/** header **/
 
 	.header_img img{
 		width: 8em;
@@ -85,22 +124,25 @@ a {
 		border-radius: 50%;
 	}
 
+	/** navigation **/
+
+	nav ul li a {
+		font-size: 1em;
+	}
+
 	/** footer **/
 
 	footer {
 		font-size: 0.8em;
 	}
-
-	nav ul li a {
-		font-size: 1em;
-	}
 }
 
 /*********************** media screen *****************************
 *
-*					width :	481 - 767 px
+*					width :	481 - 767 px | 30.1 em - 60 em
 *
 /******************************************************************/
+
 @media only screen and (max-width: 60em) {
 
 	.content h2 {
@@ -111,22 +153,22 @@ a {
 		text-align: center;
 	}
 
-	.content img {
-		width: 100%;
-	}
+	/** navigation **/
 
 	nav {
-	clear: both;
+		clear: both;
   }
 
-	nav ul li{
-		display: inline;
+  nav ul {
+		margin-top: 1em;
+		margin-bottom: 2.5em;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
 	}
 
-	nav ul li a:hover
-	{
-		color: #BADA55;
-		background-color: yellow;
+	nav ul li {
+		display: inline;
 	}
 
 	nav ul li a {
@@ -136,12 +178,15 @@ a {
 		border-radius: 5px 20px 5px;
 	}
 
-	nav ul {
-		margin-top: 1em;
-		margin-bottom: 2.5em;
-		padding: 0;
-		list-style-type: none;
-		text-align: center;
+	nav ul li a:hover	{
+		color: #BADA55;
+		background-color: yellow;
+	}
+
+	/** content **/
+
+	.content img {
+		width: 100%;
 	}
 
 	/** footer **/
@@ -151,19 +196,14 @@ a {
 		padding-left: 0;
 		text-align: center;
 	}
-
-	footer {
-		border-top: 1px solid #D2D2D2;
-		padding-top: 0.6em;
-		margin-top: 1em;
-	}
 }
 
 /*********************** media screen *****************************
 *
-*					width :	768 - 959 px
+*					width :	768 - 959 px / 48.1 em - 60.1 em
 *
 /******************************************************************/
+
 @media only screen and (min-width: 48.1em) and (max-width: 60em) {
 
 	.container {
@@ -171,9 +211,7 @@ a {
 		max-width: 30em;
 	}
 
-	.content img {
-		width: 100%;
-	}
+	/** header **/
 
 	.header_img img{
 		display: block;
@@ -181,7 +219,11 @@ a {
 		padding-top: 1.5em;
 	}
 
-	/** header **/
+	/** content **/
+
+	.content img {
+		width: 100%;
+	}
 
 	.content p {
 		font-size: 0.9em;
@@ -191,41 +233,15 @@ a {
 
 /*********************** media screen *****************************
 *
-*					min width :	30 em
+*					min width :	960 px or 60.1 em
 *
 /******************************************************************/
-@media only screen and (min-width: 30.1em) {
 
-}
-
-/*********************** media screen *****************************
-*
-*					min width :	960 px
-*
-/******************************************************************/
 @media only screen and (min-width: 60.1em) {
 
 	.container {
 		margin: auto;
 		width: 57em;
-	}
-
-	.content h2 {
-		letter-spacing: -0.5px;
-		border-bottom: solid 1px #D2D2D2;
-		font-weight: normal;
-		padding-bottom: 0.5em;
-		text-align: center;
-		font-size: 1.8em;
-	}
-
-	.content img {
-		width: 100%;
-	}
-
-	.content p {
-		font-size: 1em;
-		line-height: 1.6em;
 	}
 
 	.header_img img {
@@ -234,46 +250,19 @@ a {
 		border-radius: 50%;
 	}
 
-	footer {
-		border-top: 1px solid #D2D2D2;
-		padding-top: 0.6em;
-		margin-top: 1em;
-	}
-
 	/** navigation **/
-	nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-	}
 
 	nav {
 		float: left;
 		width: 13em;
-	}
-
-	.content {
-		float: left;
-		width: 43em;
-		margin-top: 1em;
-	}
-
-	.content h2 {
-		text-align: right;
-	}
-
-	footer {
-		clear: both;
-		background-color: #555;
-		border-radius: 2em;
-	}
-
-	nav {
 		margin-top: 6em;
 	}
 
 	nav ul {
 		text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 	}
 
 	nav ul li{
@@ -291,7 +280,7 @@ a {
 	}
 
 	nav ul li a:hover {
-		color: #000;
+		color: yellow;
 	}
 
 	nav ul li:hover
@@ -299,27 +288,36 @@ a {
 		background-color: #49A7F3;
 	}
 
-/*
-	.orange {
-		background-color:#F35C2D;
-		background-color: #E8950C;
+	/** content **/
+
+	.content {
+		float: left;
+		width: 43em;
+		margin-top: 1em;
 	}
 
-	.yellow {
-		background-color: #FBCB42;
+	.content h2 {
+		letter-spacing: -0.5px;
+		border-bottom: solid 1px #D2D2D2;
+		font-weight: normal;
+		padding-bottom: 0.5em;
+		text-align: center;
+		font-size: 1.8em;
+		text-align: right;
 	}
 
-	.green {
-		background-color: #41D05F;
+	.content img {
+		width: 100%;
 	}
 
-	.blue {
-		background-color: #49A7F3;
-		background-color: #0DD6FF;
+	.content p {
+		font-size: 1em;
+		line-height: 1.6em;
 	}
 
-	.purple {
-		background-color: #570CE8;
+	/** footer **/
+
+	footer {
+		font-size: 0.9em;
 	}
-	*/
 }
